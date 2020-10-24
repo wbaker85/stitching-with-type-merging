@@ -15,7 +15,7 @@ Using type extensions, the `books` service extends the `Author` type to resolve 
 
 ```
 query {
-	allAuthors {
+  allAuthors {
     id
     full_name
     dob
