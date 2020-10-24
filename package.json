@@ -1,0 +1,24 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@graphql-tools/wrap": "^6.2.4",
+    "apollo-server": "^2.18.2",
+    "cross-fetch": "^3.0.6",
+    "esm": "^3.2.25",
+    "graphql": "^15.3.0"
+  },
+  "scripts": {
+    "dev": "concurrently -k yarn:dev:*",
+    "dev:authors": "yarn --cwd ./services/authors/ dev",
+    "dev:books": "yarn --cwd ./services/books/ dev",
+    "dev:gateway": "wait-on tcp:4001 && wait-on tcp:4002 && yarn --cwd ./gateway/ dev"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4",
+    "wait-on": "^5.2.0"
+  }
+}

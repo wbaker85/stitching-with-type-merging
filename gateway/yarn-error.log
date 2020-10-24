@@ -1,0 +1,46 @@
+Arguments: 
+  /home/will/.nvm/versions/node/v14.12.0/bin/node /home/will/.nvm/versions/node/v14.12.0/bin/yarn add cross-fetch graphql
+
+PATH: 
+  /home/will/.rbenv/shims:/home/will/.rbenv/bin:/home/will/.nvm/versions/node/v14.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.12.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/will/graphql-gateway/gateway/package.json: Unexpected token } in JSON at position 171
+      at JSON.parse (<anonymous>)
+      at /home/will/.nvm/versions/node/v14.12.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/will/.nvm/versions/node/v14.12.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/will/.nvm/versions/node/v14.12.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "schema-stitcher",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+      "apollo-server": "^2.18.2",
+      "esm": "^3.2.25",
+    },
+    "scripts": {
+      "dev": "npx nodemon -r esm src/index.js"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
